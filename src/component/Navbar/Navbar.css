@@ -1,0 +1,170 @@
+.navbar_main{
+    width: 100%;
+    height: 7vmax;
+    background-color: #fff;
+    box-shadow: 1px 12px 2px -13px rgba(0,0,0,0.82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.Navbar{
+    width: 100%;
+    display: flex;
+
+}
+.nav_logosection{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nav_listsection{
+    width: 55%;
+    display: flex;
+    align-items: center;
+   
+}
+
+.nav_items{
+    width: 70%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.nav_item a{
+    text-decoration: none;
+    color: black;
+
+}
+.nav_item a:hover{
+    color: #007bff;
+  
+}
+
+.nav_iconsection{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.nav_icons{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav_auth{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.nav_icon{
+    font-size: 1.5vmax;
+    cursor: pointer;
+}
+
+.nav_button{
+    width: 9em;
+    height: 2.7em;
+    border-radius: 2em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #eee;
+    transition: .3s linear;
+
+}
+.nav_button:hover{
+   
+    border: 1px solid #384aeb;
+}
+
+.nav_menudiv{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 601px) {
+        .navbar_main{
+            height: 60vh;
+            align-items: flex-start;
+           
+        }
+        .Navbar{
+            flex-direction: column;
+        }
+        .nav_logosection{
+            width: 100%;
+            height:10vmax;
+        
+            justify-content: start;
+            align-items: center;
+        }
+        .nav_logosection img{
+            width: 9em;
+            height: 2em;
+            margin-left: 10px;
+        }
+        .nav_listsection{
+            width: 100%;
+            flex-direction: column;
+        }
+        .nav_items{
+            flex-direction: column;
+            width: 100%;
+            margin-left: 5vmax;
+        }
+        .nav_item{
+            padding: 2vmax 0vmax;
+            border-bottom: 1px solid rgb(239, 236, 236);
+        }
+        .nav_item a{
+            font-size: 1.2em;
+        }
+        .nav_iconsection{
+            width: 100%;
+            margin-top: 2vmax;
+        }
+        .nav_icons{
+            width: 20%;
+             justify-content: space-around;
+             margin-left: 11px;
+        }
+        .nav_icon{
+            font-size: 4vmax ;
+           
+        }
+        .nav_auth{
+            justify-content: start;
+            width: 80%;
+        }
+        .nav_button{
+            font-size:1.1em ;
+           margin-left: 2em;
+        }
+
+        .nav_menudiv{
+            display: block;
+        }
+        .active{
+            overflow: hidden;
+            height: 0;
+        }
+        
+  }
+  
